@@ -1,0 +1,21 @@
+<!--pages/food_items/new/new.wxml-->
+<text>pages/food_items/new/new.wxml</text>
+<text>Custom food items can be added here</text>
+<view class="add_food_item">
+  <form action="/" catchsubmit="formSubmit">
+    <view class="input_name">
+      <label for="name">name: </label>
+      <input type="text" name="name"/>
+    </view>
+    <view class="input_amount">
+      <label for="amount">amount: </label>
+      <input type="number" name="amount"/>
+    </view>
+    <view class="input_unit">
+      <label for="unit">unit: </label>
+      <input type="text" name="unit"/>
+    </view>
+
+    <button form-type="submit">Submit</button>
+  </form>
+</view>

@@ -1,0 +1,32 @@
+<view>
+  <navigation-bar>
+Index: show today's meals: {{dateTime}}
+</navigation-bar>
+<button bindtap="request_test">Send a get requests to root path</button>
+
+<view class="meals_of_today">
+  <view class="meal_item" wx:for="{{summaries}}" wx:key="index" bindtap="tapOnMeal">
+    <view class="meal_time">{{item.time}}</view>
+    <view class="food_items">{{item.summary}}</view>
+  </view>
+</view>
+
+
+<view class="login">
+  <button bindtap="handleLogin">Login via wechat</button>
+</view>
+
+<view>
+  <button open-type="getUserProfile" bindtap="getUserProfile">Get User Profile</button>
+</view>
+</view>
+
+<view>
+  <open-data type="userAvatarUrl"></open-data>
+  <open-data type="userNickName"></open-data>
+</view>
+
+<view class="logout">
+<button bindtap="handleLogout">Logout</button>
+
+</view>

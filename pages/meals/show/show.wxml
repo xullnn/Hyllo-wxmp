@@ -1,0 +1,25 @@
+<!--pages/meals/show/show.wxml-->
+<text>pages/meals/show/show.wxml</text>
+<text>
+All CRUD operations for a single meal happens in this single page.
+What data are needed?
+- All the data for a single meal
+</text>
+
+
+<view class="calendar">{{meal.time}}</view>
+<view class="food_items">
+  <view class="food_item" wx:for="{{meal.food_items}}" wx:key="index" bindtap="tapOnFoodItem">
+    <text>{{item.name}}</text>
+    <text>{{item.amount}}</text>
+    <text>{{item.unit}}</text>
+    <block>
+      <text class="select_all" style="display: inline">Select All</text>
+      <text class="edit" style="display: inline">Edit</text>
+      <text class="delete" style="display: inline">Delete</text>
+    </block>
+
+  </view>
+
+  <button class="add_custom_food_item" bindtap="tapOnAddFoodItem">Add Food Item</button>
+</view>

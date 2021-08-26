@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/food_items/new/new",
+    "pages/meals/show/show",
+    "pages/logs/logs",
+    "pages/meals/index/index",
+    "pages/food_items/show/show"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Discover"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "History"
+      },
+      {
+        "pagePath": "pages/meals/index/index",
+        "text": "+"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "Plan"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "Setting"
+      }
+    ]
+  }
+}
